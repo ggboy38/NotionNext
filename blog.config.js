@@ -16,7 +16,7 @@ const BLOG = {
 
   AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'ggboy', // 您的昵称 例如 tangly1024
   BIO: process.env.NEXT_PUBLIC_BIO || '江西彭于晏', // 作者简介
-  LINK: process.env.NEXT_PUBLIC_LINK || 'https://ggboy38.top', // 网站地址
+  LINK: process.env.NEXT_PUBLIC_LINK || 'https://www.ggboy38.top', // 网站地址
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'ggboy, 博客', // 网站关键词 英文逗号隔开
   BLOG_FAVICON: process.env.NEXT_PUBLIC_FAVICON || '/favicon.ico', // blog favicon 配置, 默认使用 /public/favicon.ico，支持在线图片，如 https://img.imesong.com/favicon.png
   BEI_AN: process.env.NEXT_PUBLIC_BEI_AN || '', // 备案号 闽ICP备XXXXXX
@@ -64,6 +64,12 @@ const BLOG = {
     process.env.NEXT_PUBLIC_GREETING_WORDS ||
     'Hi，我是ggboy。欢迎来到我的博客🎉',
 
+  // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
+CONTACT_EMAIL: process.env.NEXT_PUBLIC_CONTACT_EMAIL || '3080383208@qq.com', // 邮箱地址 例如mail@tangly1024.com
+CONTACT_GITHUB: process.env.NEXT_PUBLIC_CONTACT_GITHUB || 'https://github.com/ggboy38', // 你的github个人主页 例如 https://github.com/tangly1024
+CONTACT_TELEGRAM: process.env.NEXT_PUBLIC_CONTACT_TELEGRAM || 'https://t.me/ggboysker', // 你的telegram 地址 例如 https://t.me/tangly_1024
+CONTACT_BILIBILI: process.env.NEXT_PUBLIC_CONTACT_BILIBILI || 'https://space.bilibili.com/556034418?spm_id_from=333.1007.0.0', // B站主页
+  
   // uuid重定向至 slug
   UUID_REDIRECT: process.env.UUID_REDIRECT || false
 }
